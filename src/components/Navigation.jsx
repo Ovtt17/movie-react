@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Navegacion() {
+function Navigation() {
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
@@ -29,4 +29,4 @@ function Navegacion() {
   );
 }
 
-export default Navegacion
+export default Navigation;

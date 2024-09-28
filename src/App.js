@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Saludo from './components/Saludo';
-import Navegacion from './components/Navegacion';
+import Greeting from './components/Greeting';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
     <div>
-      <Navegacion />
-      <Saludo nombre="Ovett Mora" />
+      <Navigation />
+      <Greeting name="Ovett Mora" />
     </div>
   );
 }
