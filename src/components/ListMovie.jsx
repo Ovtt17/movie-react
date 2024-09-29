@@ -6,15 +6,15 @@ function ListMovie() {
   const movies = moviesData.map((movie) => {
     return <Movie
       key={movie.imdbID}
-      title={movie.Title}
-      description={movie.Plot}
-      dateOfPublished={movie.Released}
-      image={movie.Poster}
+      Title={movie.Title}
+      Plot={movie.Plot}
+      Released={movie.Released}
+      Poster={movie.Poster}
     />
   });
 
   return (
-    <div className='row'>
+    <div className='row p-4'>
       {movies}
     </div>
   )

@@ -1,12 +1,12 @@
-function Movie(props) {
+function Movie({Title, Plot, Released, Poster}) {
   return (
-    <div className="col-md-3">
-      <div className="card mb-3">
-        <img src={props.image} className="card-img-top" alt="..." />
-        <div className="card-body">
-          <h5 className="card-title">{props.title}</h5>
-          <p className="card-text">{props.description}</p>
-          <p className="card-text"><small>{props.dateOfPublished}</small></p>
+    <div className="col-md-3 mb-4">
+      <div className="card h-100">
+        <img src={Poster} className="card-img-top" alt={Title} />
+        <div className="card-body d-flex flex-column">
+          <h5 className="card-title">{Title}</h5>
+          <p className="card-text flex-grow-1">{Plot}</p>
+          <p className="card-text"><small>{Released}</small></p>
         </div>
       </div>
     </div>
